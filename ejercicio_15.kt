@@ -5,3 +5,12 @@
 //}
 
 //Error en los ifs
+
+fun saludar(nombre: String?) {
+    println("Hola, " + (nombre?.length ?: "0"))
+}
+
+fun main() {
+    saludar(null)
+    saludar("Cristopher")
+}

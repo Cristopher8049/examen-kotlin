@@ -7,3 +7,14 @@
 //saludar(null) 
 
 //No realizado
+
+fun esPalindromo(texto: String): Boolean {
+    val limpio = texto.lowercase().replace(" ", "")
+    return limpio == limpio.reversed()
+}
+
+fun main() {
+    println(esPalindromo("Ana"))          
+    println(esPalindromo("Anita lava la tina")) 
+    println(esPalindromo("Kotlin"))      
+}
